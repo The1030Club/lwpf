@@ -1,0 +1,53 @@
+body {
+}
+
+/*  Header and Navigation  */
+/*  class syntax : hdr-nv  */
+
+.hdr-nav_banner-img {
+  width: 100%;
+}
+
+
+
+
+
+.content-wrapper {
+  padding: 10px;
+}
+
+.tab-container{
+	width: 90%;
+	margin: 0 auto;
+}
+
+ul.tabs{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+ul.tabs li{
+	background: none;
+	color: #222;
+	padding: 10px;
+  text-align: center;
+	cursor: pointer;
+}
+
+ul.tabs li.current{
+	background: red;
+	color: white;
+}
+
+.tab-content{
+	display: none;
+	padding: 15px 0;
+}
+
+.tab-content.current{
+	display: inherit;
+}
+
+.gcal {
+  margin: 5%;
+}

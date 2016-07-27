@@ -17,6 +17,13 @@ $(document).ready(function() {
     });
   });
 
+	$(".js-menu-link").click(function(){
+		$(".menu").slideToggle("slow", function() {
+			$(".cross").hide();
+			$(".hamburger").show();
+		});
+	})
+
   // tab toggle
   $('ul.tabs li').click(function() {
     var tab_id = $(this).attr('data-tab');
@@ -27,5 +34,21 @@ $(document).ready(function() {
     $(this).addClass('current');
     $("#" + tab_id).addClass('current');
   });
+
+	//smooth scrolling
+	$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
 
 });

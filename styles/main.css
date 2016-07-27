@@ -1,4 +1,6 @@
-body {}
+body {
+
+}
 
 /*  Header and Navigation  */
 
@@ -15,6 +17,11 @@ header {
   width: 100%;
   height: 50px;
   line-height: 50px;
+}
+header>h3 {
+  float: right;
+  margin: 0px 60px 0;
+
 }
 .hamburger {
   background: none;
@@ -85,6 +92,31 @@ header {
   text-decoration: none;
   color: red;
 }
+
+
+
+
+
+.call-to-action_img {
+  width: 250px;
+  height: 250px;
+}
+.call-to-action_section-wrapper {
+  display: flex;
+  height: 300px;
+  background-color: #F6F6F6;
+}
+.flex-float-left {
+  flex-direction: row-reverse;
+}
+.flex-float-right {
+  flex-direction: row;
+}
+
+
+
+
+
 
 /*tabbed sections*/
 .content-wrapper {

@@ -28,18 +28,18 @@ header {
 .menu-title {
   float: right;
   color: white;
-  font-family: "Cabin Bold";
   margin-right: 60px;
 }
 .logo-wrapper {
   width: 100%;
-  text-align: center;
-  margin: 30px 0px 0px;
   border-bottom: 2px solid #2895A8;
+  background-image: url(../images/main-banner.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .logo-img {
-  width: 90%;
-  margin-bottom: 30px;
+  width: 40%;
+  margin: 50px 0 50px 25px;
 }
 /*  class syntax : hdr-nv  */
 
@@ -134,7 +134,6 @@ header {
 .call-to-action-hdr {
   font-family: "Cabin Bold";
   font-size: 1.5em;
-  text-align: center;
   margin: 20px 0 10px 10px;
 }
 .call-to-action-txt{
@@ -143,6 +142,7 @@ header {
 .call-to-action_img {
   width: 40%;
   height: 40%;
+  margin: 30px 0 0;
 }
 .call-to-action_section-wrapper {
   display: flex;

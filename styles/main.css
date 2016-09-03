@@ -1,15 +1,48 @@
+@font-face {
+  font-family: "GT Thin";
+  src: url("fonts/GT-Thin.otf");
+  src: local("☺"),
+    url("type/GT-Thin.otf") format("opentype"),
+  }
+@font-face {
+  font-family: "GT Regular";
+  src: url("fonts/GT-Regular.otf");
+  src: local("☺"),
+    url("type/GT-Regular.otf") format("opentype"),
+  }
+@font-face {
+  font-family: "Cabin Bold";
+  src: url("fonts/Cabin-Bold.otf");
+  src: local("☺"),
+    url("type/Cabin-Bold.otf") format("opentype"),
+  }
 body {
-
+  font-family: "GT Thin";
+  font-size: 18px;
 }
 
 /*  Header and Navigation  */
-
-
+header {
+  background-color: #2895A8;
+}
+.menu-title {
+  float: right;
+  color: white;
+  font-family: "Cabin Bold";
+  margin-right: 60px;
+}
+.logo-wrapper {
+  width: 100%;
+  text-align: center;
+  margin: 30px 0px 0px;
+  border-bottom: 2px solid #2895A8;
+}
+.logo-img {
+  width: 90%;
+  margin-bottom: 30px;
+}
 /*  class syntax : hdr-nv  */
 
-.hdr-nav_banner-img {
-  width: 100%;
-}
 
 /*Slideout Menu*/
 
@@ -17,12 +50,9 @@ header {
   width: 100%;
   height: 50px;
   line-height: 50px;
+  border-bottom: 2px solid #2895A8;
 }
-header>h3 {
-  float: right;
-  margin: 0px 60px 0;
 
-}
 .hamburger {
   background: none;
   position: absolute;
@@ -30,7 +60,7 @@ header>h3 {
   right: 0;
   line-height: 45px;
   padding: 0px 15px 0px 15px;
-  color: black;
+  color: white;
   border: 0;
   font-size: 2em;
   font-weight: bold;
@@ -43,8 +73,8 @@ header>h3 {
   position: absolute;
   top: 0px;
   right: 0;
-  padding: 5px 15px 0px 15px;
-  color: black;
+  padding: 22px 15px 0px 15px;
+  color: white;
   border: 0;
   font-size: 5em;
   line-height: 65px;
@@ -58,9 +88,10 @@ header>h3 {
   font-weight: bold;
   font-size: 0.8em;
   width: 100%;
-  background: #131313;
+  background: white;
   position: absolute;
   text-align: center;
+  border-bottom: 2px solid #2895A8;
 }
 .menu ul {
   margin: 0;
@@ -71,22 +102,22 @@ header>h3 {
 .menu li {
   display: block;
   padding: 15px 0 15px 0;
-  border-bottom: #1d1f20 1px solid;
+  font-family: "Cabin Bold";
 }
 .menu li:hover {
   display: block;
-  background: #181818;
   padding: 15px 0 15px 0;
-  border-bottom: #1d1f20 1px solid;
+  background: #2895A8;
+  color: white;
 }
 .menu ul li a {
   text-decoration: none;
   margin: 0px;
-  color: #fff;
+  color: black;
 }
 .menu a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 .menu a:hover {
   text-decoration: none;
@@ -96,15 +127,26 @@ header>h3 {
 
 
 
-
+.call-to-action-content-wrapper {
+  background-color: #f5f5f5;
+  padding: 10px 0 10px;
+}
+.call-to-action-hdr {
+  font-family: "Cabin Bold";
+  font-size: 1.5em;
+  text-align: center;
+  margin: 20px 0 10px 10px;
+}
+.call-to-action-txt{
+  margin: 0 10px 0;
+}
 .call-to-action_img {
-  width: 250px;
-  height: 250px;
+  width: 40%;
+  height: 40%;
 }
 .call-to-action_section-wrapper {
   display: flex;
-  height: 300px;
-  background-color: #F6F6F6;
+  background-color: F5F5F5;
 }
 .flex-float-left {
   flex-direction: row-reverse;
@@ -126,6 +168,15 @@ header>h3 {
   width: 90%;
   margin: 0 auto;
 }
+.tab-container-hdr {
+  font-family: "Cabin Bold";
+  font-size: 2em;
+  text-align: center;
+  margin: 40px 0 20px;
+}
+.tab-hdr {
+  font-family: "Cabin Bold";
+}
 ul.tabs {
   margin: 0px;
   padding: 0px;
@@ -138,8 +189,12 @@ ul.tabs li {
   text-align: center;
   cursor: pointer;
 }
+ul.tabs li:hover{
+  background: #2895A8;
+  color: white;
+}
 ul.tabs li.current {
-  background: red;
+  background: #2895A8;
   color: white;
 }
 .tab-content {
@@ -151,4 +206,36 @@ ul.tabs li.current {
 }
 .gcal {
   margin: 5%;
+}
+
+
+
+
+
+/*----------------------*/
+/*    PAYPAL Wrapper    */
+/*----------------------*/
+.paypal {
+  padding: 0px;
+  width: 100%;
+  text-align: center;
+}
+.paypal-btn-hdr {
+  width: 100%;
+  font-family: "Cabin Bold";
+}
+.paypal-choice-wrapper {
+  width: 100%;
+}
+.paypal-choice-wrapper table {
+  margin: 5px 0;
+  width: 100%;
+}
+.paypalbutton {
+  background: white;
+  border: 2px solid #2895A8;
+  color: black;
+  font-family: "Cabin Bold";
+  border-radius: 3px;
+  margin: 10px 0 40px;
 }

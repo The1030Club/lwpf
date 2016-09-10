@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="UTF-8" name="description" content="Live with Purpose Fitness Training is personal training services based in Louisville Colorado. Train. Results. Live.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 	<title>Live with Purpose Fitness | Personal Training in Louisville Colorado</title>
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
 	<link rel="stylesheet" href="styles/normalize.css">
@@ -10,25 +11,33 @@
 </head>
 
 <body>
-
 	<!--              -->
 	<!-- HEADER & NAV -->
 	<!--              -->
 
-
 	<header>
 		<div class="hdr-stripe"></div>
-		<h2 class="menu-title">MENU</h2>
-	  <button class="hamburger">&#9776;</button>
-	  <button class="cross">&#735;</button>
+		<button class="hamburger">&#9776;</button>
+		<button class="cross">&#735;</button>
+		<div class="hdr-mini-logo-wrapper">
+			<img class="hdr-mini-logo" src="images/main-logo-no-txt.png" alt="">
+		</div>
 	</header>
 
 	<div class="menu">
 	  <ul>
-      <a class="js-menu-link" href="index.html"><li>Home</li></a>
+			<a class="js-menu-link" href="index.html"><li>Home</li></a>
 	    <a class="js-menu-link" href="schedule.html"><li>Schedule</li></a>
 	    <a class="js-menu-link" href="contact.html"><li>Contact Us</li></a>
 	  </ul>
+	</div>
+
+	<div class="menu-desktop">
+		<div class="hdr-stripe"></div>
+		<a class="menu-desktop-link" href="contact.html"><li>Contact Us</li></a>
+		<a class="menu-desktop-link active-menu-desktop" href="#"><li>Schedule</li></a>
+		<a class="menu-desktop-link" href="#payment"><li>Payments</li></a>
+		<a class="menu-desktop-link" href="index.html"><li>Home</li></a>
 	</div>
 
 	<div class="logo-wrapper">
@@ -38,10 +47,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 		<!--                 -->
 		<!-- GOOGLE CALENDAR -->
 		<!--                 -->
-
 		<div class="schedule-wrapper" id="schedule-wrapper">
 			<div class="gcal">
 				<iframe src="https://www.google.com/calendar/embed?showNav=0&amp;showPrint=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=ojru3b0qiuaqg6bckt0li6a1ng%40group.calendar.google.com&amp;color=%2342104A&amp;ctz=America%2FNew_York" style=" border-width:0 "
@@ -56,8 +75,8 @@
 				<!-- PAYPAL BUTTON -->
 				<!--               -->
 
-        <div class="paypal-hdr-section">
-          <h2>Get started today</h2>
+        <div class="paypal-hdr-section" id="payment">
+          <h2 class="section-hdr">Get started today</h2>
           <p>Sign up and pay for a class below. PayPal securely processes payments for Live With Purpose Fitness. Please use the checkout buttons below and login to your account to make a payment.</p>
         </div>
 
@@ -126,7 +145,7 @@
 			</div>
 		</div>
 	</div>
-
+</div>
 
 
 	<!--         -->

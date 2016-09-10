@@ -17,8 +17,9 @@
     url("type/Cabin-Bold.otf") format("opentype"),
   }
 body {
-  font-family: "GT Thin";
   font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  color: #333B44;
 }
 
 /*  Header and Navigation  */
@@ -28,6 +29,7 @@ header {
   height: 125px;
   line-height: 50px;
 }
+.footer-wrapper,
 .hdr-stripe {
   height: 25px;
   background: #7C4DFF;
@@ -43,19 +45,16 @@ header {
   height: 100%;
 }
 .logo-wrapper {
+  display: none;
   width: 100%;
   background-image: url(../images/main-banner.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
-  -webkit-box-shadow: 0px 10px 24px -1px rgba(163,163,163,1);
-  -moz-box-shadow: 0px 10px 24px -1px rgba(163,163,163,1);
-  box-shadow: 0px 10px 24px -1px rgba(163,163,163,1);
 }
 .logo-img {
   width: 40%;
   margin: 50px 0 50px 25px;
 }
-/*  class syntax : hdr-nv  */
 
 
 
@@ -125,10 +124,17 @@ header {
   text-decoration: none;
   color: red;
 }
+.menu-desktop {
+  display: none;
+}
 
 
 
-
+.section-hdr {
+  font-family: "Cabin Bold";
+  font-size: 1.5em;
+  color: #7C4DFF;
+}
 .call-to-action-hdr {
   font-family: "Cabin Bold";
   font-size: 1.5em;
@@ -142,7 +148,6 @@ header {
 }
 .call-to-action_section-wrapper {
   display: flex;
-  background-color: #F5F5F5;
   padding: 20px;
 }
 .call-to-action_section-wrapper:last-child {
@@ -182,6 +187,10 @@ header {
   text-align: center;
   margin: 40px 0 20px;
 }
+.tabbed-section-hdr {
+  text-align: center;
+  margin: 30px 0 20px;
+}
 .tab-hdr {
   font-family: "Cabin Bold";
 }
@@ -215,17 +224,13 @@ ul.tabs li.current {
 .gcal {
   margin: 5%;
 }
-.contact-us-hdr {
-  text-align: center;
-  font-family: "Cabin Bold";
-  margin: 20px;
-}
-.contact-us-text {
-  padding: 0 5% 0;
+.contact-wrapper {
+  margin: 5%;
 }
 .contact-form {
   display: flex;
   width: 100%;
+  margin: 0 0 10%;
 }
 .single-line-form,
 .form-submit,
@@ -304,7 +309,121 @@ ul.tabs li.current {
   overflow: hidden;
   margin: 20px auto;
 }
-.contact-wrapper {
-  margin: 20px;
 
+
+
+
+
+/*-------------------------*/
+/*      media queries      */
+/*-------------------------*/
+
+@media screen
+  and (min-width: 768px)
+  and (max-width: 5000px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .hdr-mini-logo-wrapper {
+      display: none;
+    }
+    .hdr-mini-logo-wrapper img {
+      height: 100%;
+    }
+    .logo-wrapper {
+      margin-top: 90px;
+      display: block;
+      width: 100%;
+      background-image: url(../images/main-banner.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+    .logo-img {
+      width: 50%;
+      margin: 100px 0 100px 25px;
+    }
+    .menu-desktop {
+      top: 0;
+      border-top: 25px solid #7C4DFF;
+      display: flex;
+      flex-direction: row-reverse;
+      width: 100%;
+      position: fixed;
+      background-color: white;
+      -webkit-box-shadow: 0px 10px 24px -1px rgba(163,163,163,1);
+      -moz-box-shadow: 0px 10px 24px -1px rgba(163,163,163,1);
+      box-shadow: 0px 10px 24px -1px rgba(163,163,163,1);
+    }
+    .menu-desktop-link {
+      width: 17%;
+      text-align: center;
+      list-style: none;
+      padding: 15px 0;
+      color: #7C4DFF;
+      text-decoration: none;
+      font-family: "Cabin Bold";
+      font-size: 1.5em;
+    }
+    .menu-desktop-link:hover,
+    .active-menu-desktop {
+      color: #03A9F4;
+      font-weight: bold;
+      border-bottom: 4px solid #03A9F4;
+    }
+    header {
+      display: none;
+    }
+    .section-hdr {
+      font-size: 2em;
+    }
+    .programs-wrapper,
+    .schedule-wrapper {
+      max-width: 1000px;
+      margin: auto;
+    }
+    .contact-wrapper {
+      display: flex;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .contact-section {
+      width: 50%;
+      padding: 50px;
+    }
+    .gcal iframe {
+      height: 600px;
+    }
+
+
+    .call-to-action-wrapper {
+      display: flex;
+      flex-direction: row;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .call-to-action_img {
+      height: 250px;
+      width: 250px;
+    }
+    .call-to-action_section-wrapper {
+      display: block;
+      width: 33%;
+    }
+    .call-to-action_content-wrapper {
+      justify-content: center;
+      flex-direction: column;
+      display: flex;
+    }
+    .flex-float-left {
+      flex-direction: row-reverse;
+    }
+    .flex-float-right {
+      flex-direction: row;
+    }
+    .tabs {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+    }
+    .programs-wrapper {
+      height: 400px;
+    }
 }

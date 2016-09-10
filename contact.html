@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="UTF-8" name="description" content="Live with Purpose Fitness Training is personal training services based in Louisville Colorado. Train. Results. Live.">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 	<title>Live with Purpose Fitness | Personal Training in Louisville Colorado</title>
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
 	<link rel="stylesheet" href="styles/normalize.css">
@@ -11,54 +12,61 @@
 
 <body>
 
+
 	<!--              -->
 	<!-- HEADER & NAV -->
 	<!--              -->
-
 	<header>
 		<div class="hdr-stripe"></div>
-		<h2 class="menu-title">MENU</h2>
-	  <button class="hamburger">&#9776;</button>
-	  <button class="cross">&#735;</button>
+		<button class="hamburger">&#9776;</button>
+		<button class="cross">&#735;</button>
+		<div class="hdr-mini-logo-wrapper">
+			<img class="hdr-mini-logo" src="images/main-logo-no-txt.png" alt="">
+		</div>
 	</header>
 
 	<div class="menu">
 	  <ul>
-	    <a class="js-menu-link" href="index.html"><li>Home</li></a>
+			<a class="js-menu-link" href="index.html"><li>Home</li></a>
 	    <a class="js-menu-link" href="schedule.html"><li>Schedule</li></a>
 	    <a class="js-menu-link" href="contact.html"><li>Contact Us</li></a>
 	  </ul>
+	</div>
+
+	<div class="menu-desktop">
+		<div class="hdr-stripe"></div>
+		<a class="menu-desktop-link active-menu-desktop" href="#"><li>Contact Us</li></a>
+		<a class="menu-desktop-link" href="schedule.html"><li>Schedule</li></a>
+		<a class="menu-desktop-link" href="index.html"><li>Home</li></a>
 	</div>
 
 	<div class="logo-wrapper">
 		<img src="images/main-logo.png" alt="live with purpose fitness logo" class="logo-img">
 	</div>
 
-
-  <h1 class="contact-us-hdr">Contact Us!</h1>
-  <p class="contact-us-text">We would love to hear from you. Please fill out the form below to get in touch!</p>
-  <div class="contact-form">
-    <form action="https://formspree.io/bphaaland@gmail.com"
-      method="POST">
-    <input    class="single-line-form" type="text"   placeholder="Name" name="user_name">
-    <input    class="single-line-form" type="email"  placeholder="Email" name="user_email">
-    <textarea class="multi-line-form"  type="text"   placeholder="What can we help you with..." name="user_message"></textarea>
-    <input    class="form-submit"      type="submit" value="Send">
-    </form>
-  </div>
-
-	<!--             -->
-	<!-- INSTRUCTORS -->
-	<!--             -->
-
-	<div class="contact-wrapper">
-		<h2 class="instructor-hdr">Kelli Fox</h2>
+  <div class="contact-wrapper">
+		<div class="contact-section">
+		  <h1 class="section-hdr">Contact Us!</h1>
+		  <p class="contact-us-text">We would love to hear from you. Please fill out the form below to get in touch!</p>
+		  <div class="contact-form">
+		    <form action="https://formspree.io/bphaaland@gmail.com"
+		      method="POST">
+		    <input    class="single-line-form" type="text"   placeholder="Name" name="user_name">
+		    <input    class="single-line-form" type="email"  placeholder="Email" name="user_email">
+		    <textarea class="multi-line-form"  type="text"   placeholder="What can we help you with..." name="user_message"></textarea>
+		    <input    class="form-submit"      type="submit" value="Send">
+		    </form>
+		  </div>
+		</div>
+	<div class="contact-section">
+		<h2 class="section-hdr">Kelli Fox</h2>
 		<div class="instructor_img-wrapper">
 			<img class="instructor_img" src="images/main-bio.png" alt="picture of kelli fox">
 		</div>
 		<p>Kelli Fox is an NASM-Certified Personal Trainer who has helped clients set and reach fitness goals for over 15 years. She brings extensive practical experience as a runner, cross-fitter, life coach and nutrition enthusiast. She founded Live with Purpose
 			Fitness Training to make exercise accessible and empowering, for long-term benefits. Kelli is a Boulder native, a life-long athlete, mother of two and dog lover. She believes that everyone can become more active and fit at any age. She is committed
 			to finding a form of exercise that works for each individual.</p>
+	</div>
 	</div>
 
 

@@ -17,23 +17,25 @@
 
 
 	<header>
-		<h2 class="menu-title">MENU</h2>
+		<div class="hdr-stripe"></div>
 	  <button class="hamburger">&#9776;</button>
 	  <button class="cross">&#735;</button>
+		<div class="hdr-mini-logo-wrapper">
+			<img class="hdr-mini-logo" src="images/main-logo-no-txt.png" alt="">
+		</div>
 	</header>
 
 	<div class="menu">
 	  <ul>
-	    <a class="js-menu-link" href="#call-to-action"><li>About</li></a>
-	    <a class="js-menu-link" href="#programs-wrapper"><li>Programs</li></a>
-	    <a class="js-menu-link" href="#schedule-wrapper"><li>Schedule</li></a>
-	    <a class="js-menu-link" href="#contact-wrapper"><li>Contact Us</li></a>
+			<a class="js-menu-link" href="#jsfirst-section"><li>Programs</li></a>
+	    <a class="js-menu-link" href="schedule.html"><li>Schedule</li></a>
+	    <a class="js-menu-link" href="contact.html"><li>Contact Us</li></a>
 	  </ul>
 	</div>
 
-	<div class="logo-wrapper">
+	<!-- <div class="logo-wrapper">
 		<img src="images/main-logo.png" alt="live with purpose fitness logo" class="logo-img">
-	</div>
+	</div> -->
 
 
 
@@ -44,7 +46,7 @@
 	<!-- CALL TO ACTION -->
 	<!--                -->
 
-	<div class="call-to-action-content-wrapper" id="call-to-action">
+	<div id="#jsfirst-section">
 		<div class="call-to-action-wrapper">
 			<div class="call-to-action_section-wrapper flex-float-right">
 				<div class="call-to-action_content-wrapper">
@@ -77,7 +79,7 @@
 		<!--                      -->
 		<!-- PROGRAM DESCRIPTIONS -->
 		<!--                      -->
-		<div class="programs-wrapper" id="programs-wrapper">
+		<div class="programs-wrapper" id="jsfirst-section">
 			<h1 class="tab-container-hdr">Programs</h1>
 			<div class="tab-container">
 
@@ -114,108 +116,6 @@
 			</div>
 		</div>
 
-
-
-
-
-		<!--                 -->
-		<!-- GOOGLE CALENDAR -->
-		<!--                 -->
-
-		<div class="schedule-wrapper" id="schedule-wrapper">
-			<div class="gcal">
-				<iframe src="https://www.google.com/calendar/embed?showNav=0&amp;showPrint=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=ojru3b0qiuaqg6bckt0li6a1ng%40group.calendar.google.com&amp;color=%2342104A&amp;ctz=America%2FNew_York" style=" border-width:0 "
-									width="100%" height="400px"></iframe>
-			</div>
-
-
-
-
-
-				<!--               -->
-				<!-- PAYPAL BUTTON -->
-				<!--               -->
-
-				<div class="paypal">
-					<h3 class="paypal-btn-hdr">Personal Training</h3>
-
-					<div class="paypal-choice-wrapper">
-						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-							<input type="hidden" name="cmd" value="_s-xclick">
-							<input type="hidden" name="hosted_button_id" value="YKJKQMB5EEYSU">
-							<table>
-								<tbody>
-									<tr>
-										<td>
-											<input type="hidden" name="on0" value="Sessions">
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<select name="os0">
-												<option value="1 Session">1 Session $40.00 USD</option>
-												<option value="4 Sessions">4 Sessions $145.00 USD</option>
-												<option value="6 Sessions">6 Sessions $198.00 USD</option>
-												<option value="10 Sessions">10 Sessions $300.00 USD</option>
-											</select>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-							<input type="hidden" name="currency_code" value="USD">
-							<input type="submit" value="Buy Now" name="submit" title="PayPal - The safer, easier way to pay online!" class="paypalbutton">
-							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-						</form>
-					</div>
-
-					<h3 class="paypal-btn-hdr">Group Classes</h3>
-					<div class="paypal-choice-wrapper">
-						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-							<input type="hidden" name="cmd" value="_s-xclick">
-							<input type="hidden" name="hosted_button_id" value="GPNAJPXUS7Q98">
-							<table>
-								<tbody>
-									<tr>
-										<td>
-											<input type="hidden" name="on0" value="Classes">
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<select name="os0">
-												<option value="Drop in Class">Drop in Class $12.00 USD</option>
-												<option value="4 Session Class">4 Session Class $40.00 USD</option>
-												<option value="6 Session Class">6 Session Class $48.00 USD</option>
-												<option value="Monthly Unlimited">Monthly Unlimited $75.00 USD</option>
-											</select>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-							<input type="hidden" name="currency_code" value="USD">
-							<input type="submit" value="Buy Now" name="submit" title="PayPal - The safer, easier way to pay online!" class="paypalbutton">
-							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-
-
-	<!--             -->
-	<!-- INSTRUCTORS -->
-	<!--             -->
-
-	<div class="contact-wrapper" id="contact-wrapper">
-		<h2>Kelli Fox</h2>
-		<img src="images/main-bio.png" alt="">
-		<p>Kelli Fox is an NASM-Certified Personal Trainer who has helped clients set and reach fitness goals for over 15 years. She brings extensive practical experience as a runner, cross-fitter, life coach and nutrition enthusiast. She founded Live with Purpose
-			Fitness Training to make exercise accessible and empowering, for long-term benefits. Kelli is a Boulder native, a life-long athlete, mother of two and dog lover. She believes that everyone can become more active and fit at any age. She is committed
-			to finding a form of exercise that works for each individual.</p>
-	</div>
 
 
 

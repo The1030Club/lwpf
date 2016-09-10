@@ -23,19 +23,33 @@ body {
 
 /*  Header and Navigation  */
 header {
-  background-color: #2895A8;
+  background-color: white;
+  width: 100%;
+  height: 125px;
+  line-height: 50px;
 }
-.menu-title {
-  float: right;
-  color: white;
-  margin-right: 60px;
+.hdr-stripe {
+  height: 25px;
+  background: #7C4DFF;
+}
+.hdr-mini-logo-wrapper {
+  position: absolute;
+  top: 35px;
+  width: 10%;
+  left: 45%;
+  height: 75px;
+}
+.hdr-mini-logo-wrapper img {
+  height: 100%;
 }
 .logo-wrapper {
   width: 100%;
-  border-bottom: 2px solid #2895A8;
   background-image: url(../images/main-banner.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
+  -webkit-box-shadow: 0px 10px 24px -1px rgba(163,163,163,1);
+  -moz-box-shadow: 0px 10px 24px -1px rgba(163,163,163,1);
+  box-shadow: 0px 10px 24px -1px rgba(163,163,163,1);
 }
 .logo-img {
   width: 40%;
@@ -44,26 +58,17 @@ header {
 /*  class syntax : hdr-nv  */
 
 
+
 /*Slideout Menu*/
-
-header {
-  width: 100%;
-  height: 50px;
-  line-height: 50px;
-  border-bottom: 2px solid #2895A8;
-}
-
 .hamburger {
   background: none;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 50px;
   line-height: 45px;
   padding: 0px 15px 0px 15px;
-  color: white;
+  color: #7C4DFF;
   border: 0;
   font-size: 2em;
-  font-weight: bold;
   cursor: pointer;
   outline: none;
   z-index: 1000;
@@ -71,14 +76,12 @@ header {
 .cross {
   background: none;
   position: absolute;
-  top: 0px;
-  right: 0;
+  top: 50px;
   padding: 22px 15px 0px 15px;
-  color: white;
+  color: #7C4DFF;
   border: 0;
   font-size: 5em;
   line-height: 65px;
-  font-weight: bold;
   cursor: pointer;
   outline: none;
   z-index: 1000;
@@ -91,7 +94,6 @@ header {
   background: white;
   position: absolute;
   text-align: center;
-  border-bottom: 2px solid #2895A8;
 }
 .menu ul {
   margin: 0;
@@ -107,7 +109,7 @@ header {
 .menu li:hover {
   display: block;
   padding: 15px 0 15px 0;
-  background: #2895A8;
+  background: #7C4DFF;
   color: white;
 }
 .menu ul li a {
@@ -127,32 +129,38 @@ header {
 
 
 
-.call-to-action-content-wrapper {
-  background-color: #f5f5f5;
-  padding: 10px 0 10px;
-}
 .call-to-action-hdr {
   font-family: "Cabin Bold";
   font-size: 1.5em;
-  margin: 20px 0 10px 10px;
-}
-.call-to-action-txt{
-  margin: 0 10px 0;
+  color: #7C4DFF;
 }
 .call-to-action_img {
   width: 40%;
   height: 40%;
-  margin: 30px 0 0;
+  display: flex;
+  margin: 10% 0;
 }
 .call-to-action_section-wrapper {
   display: flex;
-  background-color: F5F5F5;
+  background-color: #F5F5F5;
+  padding: 20px;
+}
+.call-to-action_section-wrapper:last-child {
+  margin-bottom: 0;
+}
+.call-to-action_content-wrapper {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
 }
 .flex-float-left {
   flex-direction: row-reverse;
 }
 .flex-float-right {
   flex-direction: row;
+}
+.programs-wrapper {
+  height: 700px;
 }
 
 
@@ -190,11 +198,11 @@ ul.tabs li {
   cursor: pointer;
 }
 ul.tabs li:hover{
-  background: #2895A8;
+  background: #7C4DFF;
   color: white;
 }
 ul.tabs li.current {
-  background: #2895A8;
+  background: #7C4DFF;
   color: white;
 }
 .tab-content {
@@ -207,6 +215,35 @@ ul.tabs li.current {
 .gcal {
   margin: 5%;
 }
+.contact-us-hdr {
+  text-align: center;
+  font-family: "Cabin Bold";
+  margin: 20px;
+}
+.contact-us-text {
+  padding: 0 5% 0;
+}
+.contact-form {
+  display: flex;
+  width: 100%;
+}
+.single-line-form,
+.form-submit,
+.multi-line-form {
+  margin: 10px 5% 0 5%;
+  padding: 3px;
+}
+.single-line-form,
+.multi-line-form {
+  border: 1px solid black;
+  width: 90%;
+}
+.multi-line-form {
+  height: 100px;
+}
+.form-submit {
+  width: 25%;
+}
 
 
 
@@ -215,6 +252,9 @@ ul.tabs li.current {
 /*----------------------*/
 /*    PAYPAL Wrapper    */
 /*----------------------*/
+.paypal-hdr-section {
+  padding: 20px;
+}
 .paypal {
   padding: 0px;
   width: 100%;
@@ -233,9 +273,38 @@ ul.tabs li.current {
 }
 .paypalbutton {
   background: white;
-  border: 2px solid #2895A8;
+  border: 2px solid #7C4DFF;
   color: black;
   font-family: "Cabin Bold";
   border-radius: 3px;
   margin: 10px 0 40px;
+}
+
+
+
+
+/*-----------------------*/
+/*      Instructors      */
+/*-----------------------*/
+.instructor-hdr {
+  text-align: center;
+  color: black;
+  font-family: "Cabin Bold";
+  font-size: 2em;
+}
+.instructor_img {
+  width: 300px;
+  height: auto;
+}
+.instructor_img-wrapper {
+  border: 2px solid #7C4DFF;
+  border-radius: 150px;
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  margin: 20px auto;
+}
+.contact-wrapper {
+  margin: 20px;
+
 }
